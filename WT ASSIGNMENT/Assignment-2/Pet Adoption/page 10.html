@@ -1,0 +1,385 @@
+
+<style>
+.profile-container {
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 31px 0;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.navigation-bar {
+  display: flex;
+  width: 100%;
+  max-width: 396px;
+  align-items: stretch;
+  gap: 20px;
+  font-family:
+    "Material Icons",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.nav-back {
+  color: #ff1119;
+}
+
+.nav-home {
+  color: #e68d8d;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  aspect-ratio: 0.91;
+  object-fit: contain;
+  object-position: center;
+  width: 67px;
+  border-radius: 100px;
+  margin-top: 19px;
+}
+
+.profile-name {
+  color: #000;
+  font-size: 20px;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.profile-content {
+  align-self: stretch;
+  display: flex;
+  margin-top: 14px;
+  width: 100%;
+  padding: 0 51px 0 20px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.section-title {
+  color: #171717;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.location-info {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-icon {
+  color: #f26d3d;
+  font-size: 20px;
+}
+
+.location-text {
+  color: #171717;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.status-item {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-icon {
+  color: #f26d3d;
+  font-size: 20px;
+}
+
+.status-text {
+  color: #171717;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dedication-info {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  gap: 8px;
+}
+
+.dedication-hours {
+  color: #f26d3d;
+  font-family:
+    Inter,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dedication-text {
+  color: #171717;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile-description {
+  border-radius: 8px;
+  background-color: rgba(251, 173, 64, 0.3);
+  margin-top: 24px;
+  padding: 8px;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  color: #171717;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.pictures-section {
+  margin-top: 27px;
+}
+
+.pictures-gallery {
+  display: flex;
+  align-items: stretch;
+  gap: 22px;
+  margin-top: 16px;
+}
+
+.gallery-image {
+  object-fit: contain;
+  object-position: center;
+}
+
+.gallery-image:first-child {
+  aspect-ratio: 0.9;
+  width: 119px;
+}
+
+.gallery-image:last-child {
+  aspect-ratio: 0.66;
+  width: 88px;
+}
+
+.adoption-section {
+  margin-top: 16px;
+}
+
+.pet-card {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 14px;
+  align-items: stretch;
+  gap: 17px;
+}
+
+.pet-image {
+  aspect-ratio: 0.96;
+  object-fit: contain;
+  object-position: center;
+  width: 92px;
+  border-radius: 80px;
+  flex-shrink: 0;
+}
+
+.pet-info {
+  display: flex;
+  margin: auto 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.pet-name {
+  color: #171717;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-left: 11px;
+}
+
+.pet-location {
+  color: #000;
+  font-family:
+    "Luxurious Roman",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.pet-type {
+  border-radius: 50px;
+  background-color: #f26d3d;
+  margin-top: 8px;
+  padding: 2px 24px;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  color: #f7f7f7;
+  font-weight: 600;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+</style>
+
+
+
+<header class="profile-container">
+  <nav class="navigation-bar">
+    <span class="material-icons nav-back">arrow_back</span>
+    <span class="material-icons nav-home">home</span>
+  </nav>
+
+  <div class="profile-info">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b0330734994a22e0bd55631ba20b2574556ab5927d4a877825b673e90bd5fb6?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+      class="profile-image"
+      alt="Profile picture of Mahesh Babu"
+    />
+    <h1 class="profile-name">Mahesh Babu</h1>
+  </div>
+
+  <main class="profile-content">
+    <section class="about-section">
+      <h2 class="section-title">About me</h2>
+
+      <div class="location-info">
+        <span class="material-icons location-icon">public</span>
+        <span class="location-text">London, England</span>
+      </div>
+
+      <div class="status-item">
+        <span class="material-icons status-icon">check_circle</span>
+        <span class="status-text">already have pets</span>
+      </div>
+
+      <div class="status-item">
+        <span class="material-icons status-icon">check_circle</span>
+        <span class="status-text">safe home</span>
+      </div>
+
+      <div class="status-item">
+        <span class="material-icons status-icon">check_circle</span>
+        <span class="status-text">consent with country regulations</span>
+      </div>
+
+      <div class="dedication-info">
+        <span class="dedication-hours">4+</span>
+        <span class="dedication-text">hours/day able to dedicate to pets</span>
+      </div>
+
+      <p class="profile-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt et
+        eros eu tincidunt. Maecenas id scelerisque leo, eu posuere eros convallis
+        massa eu iaculis porttitor. Maecenas sed finibus dolor, et ora sed diam.
+        In et tempus odio.
+      </p>
+    </section>
+
+    <section class="pictures-section">
+      <h2 class="section-title">Pictures:-</h2>
+      <div class="pictures-gallery">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/f73665c09db196b59008254ab28988457439922e152c4c2367718f6c5faf374e?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          class="gallery-image"
+          alt="Gallery image 1"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/52405942974849d7e512c947baf4a03c5da243a170d469092e2c6dd6e743645e?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          class="gallery-image"
+          alt="Gallery image 2"
+        />
+      </div>
+    </section>
+
+    <section class="adoption-section">
+      <h2 class="section-title">Pets For Adoption</h2>
+      <div class="pet-card">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fb6e38cc637e66b6937553ef2f8099f3067c9557e8f017f60f41cdb247e53f9?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          class="pet-image"
+          alt="Picture of Dimba"
+        />
+        <div class="pet-info">
+          <h3 class="pet-name">Dimba</h3>
+          <p class="pet-location">Amritsar Panjab</p>
+        </div>
+        <span class="pet-type">Dog</span>
+      </div>
+    </section>
+  </main>
+</header>

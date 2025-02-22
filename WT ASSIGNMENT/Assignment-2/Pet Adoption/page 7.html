@@ -1,0 +1,253 @@
+
+<style>
+.page-container {
+  background-color: #ffffff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 20px 16px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.navigation {
+  align-self: start;
+  display: flex;
+  align-items: stretch;
+  gap: 100px;
+  font-family:
+    "Material Icons",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.nav-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.back-icon {
+  color: #ff1119;
+}
+
+.home-icon {
+  color: #e68d8d;
+}
+
+.pet-filters {
+  align-self: stretch;
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  gap: 16px;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  color: #f7f7f7;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+
+.filter-button {
+  border: none;
+  border-radius: 60px;
+  background-color: #ec5254;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  width: 88px;
+  height: 88px;
+  letter-spacing: 0.96px;
+}
+
+.filter-dogs {
+  font-size: 32px;
+  width: 96px;
+  height: 96px;
+}
+
+.pets-grid {
+  margin-top: 27px;
+  width: 100%;
+  max-width: 387px;
+}
+
+.pet-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.pet-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 80px;
+  object-fit: contain;
+}
+
+.pet-info {
+  margin-top: 15px;
+}
+
+.pet-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pet-name {
+  color: #171717;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pet-type {
+  border-radius: 50px;
+  background-color: #e5a538;
+  padding: 1px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 32px;
+}
+
+.pet-location {
+  color: #000000;
+  font-size: 20px;
+  font-family:
+    "Luxurious Roman",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.dual-pet-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+</style>
+
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Luxurious+Roman&family=Montserrat:wght@700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css" />
+
+<main class="page-container">
+  <nav class="navigation">
+    <button class="nav-icon back-icon" aria-label="Go back">arrow_back</button>
+    <button class="nav-icon home-icon" aria-label="Go to home">home</button>
+  </nav>
+
+  <section class="pet-filters">
+    <button class="filter-button filter-dogs">Dogs</button>
+    <button class="filter-button filter-cats">Cats</button>
+    <button class="filter-button filter-birds">Birds</button>
+    <button class="filter-button filter-fish">Fish</button>
+  </section>
+
+  <section class="pets-grid">
+    <article class="pet-card">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ead38ca87b64cf043eb87838343adc1bbd56fc20b004a98ecf42a4d6fec532a3?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        alt="Shakira the cat"
+        class="pet-image"
+      />
+      <div class="pet-info">
+        <div class="pet-header">
+          <h2 class="pet-name">Shakira</h2>
+          <span class="pet-type">Cat</span>
+        </div>
+        <p class="pet-location">Ahemadabad Gujarat</p>
+      </div>
+    </article>
+
+    <div class="dual-pet-container">
+      <article class="pet-card">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/c57cc9bec67ec1db431b7895a07aeb479e465cc4ebe03ef23ed193b2af05e322?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          alt="Husky the cat"
+          class="pet-image"
+        />
+        <div class="pet-info">
+          <div class="pet-header">
+            <h2 class="pet-name">Husky</h2>
+            <span class="pet-type">Cat</span>
+          </div>
+          <p class="pet-location">Ahemadabad Gujarat</p>
+        </div>
+      </article>
+
+      <article class="pet-card">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/59ef29a505a393b7e216188ec63c623b2bc3559584b6c050ec8089b65796255f?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          alt="Loki the cat"
+          class="pet-image"
+        />
+        <div class="pet-info">
+          <div class="pet-header">
+            <h2 class="pet-name">Loki</h2>
+            <span class="pet-type">Cat</span>
+          </div>
+          <p class="pet-location">Ahemadabad Gujarat</p>
+        </div>
+      </article>
+    </div>
+
+    <article class="pet-card">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f791553d94df12a90fd0512b74256c7197a1f358cced6209009a33cb2ba782a?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        alt="Wasabi the cat"
+        class="pet-image"
+      />
+      <div class="pet-info">
+        <div class="pet-header">
+          <h2 class="pet-name">Wasabi</h2>
+          <span class="pet-type">Cat</span>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>

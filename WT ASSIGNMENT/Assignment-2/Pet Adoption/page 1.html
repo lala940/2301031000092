@@ -1,0 +1,97 @@
+<style>
+@font-face {
+  font-family: "Londrina Solid";
+  src: url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
+}
+
+.auth-container {
+  background-color: rgba(65, 240, 182, 1);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 137px 0 62px;
+  overflow: hidden;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  color: #f7f7f7;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 16px 0 80px;
+  flex-direction: column;
+}
+
+.logo-image {
+  aspect-ratio: 1.36;
+  object-fit: contain;
+  object-position: center;
+  width: 233px;
+  max-width: 100%;
+}
+
+.auth-button {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #f7f7f7;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.auth-button:hover {
+  transform: scale(1.05);
+}
+
+.auth-button:active {
+  transform: scale(0.95);
+}
+
+.signup-button {
+  background-color: rgba(190, 145, 145, 1);
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  align-self: flex-end;
+  margin-top: 185px;
+  padding: 0 36px;
+  aspect-ratio: 1;
+}
+
+.login-button {
+  background-color: rgba(255, 135, 135, 1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  width: 200px;
+  padding: 0 38px;
+  white-space: nowrap;
+  aspect-ratio: 1;
+}
+
+</style>
+<main class="auth-container">
+  <section class="content-wrapper">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/840adafcafb78af679a4893082061b09db6099a96c671f05320e0d8e20368c46?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+      class="logo-image"
+      alt="Company Logo"
+    />
+    <button class="auth-button signup-button" aria-label="Sign up">
+      sign up
+    </button>
+  </section>
+  <button class="auth-button login-button" aria-label="Login">login</button>
+</main>

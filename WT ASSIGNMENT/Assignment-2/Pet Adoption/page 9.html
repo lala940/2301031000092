@@ -1,0 +1,223 @@
+<header class="nav-header">
+  <nav class="navigation">
+    <button class="nav-button back-button material-icons">arrow_back</button>
+    <button class="nav-button home-button material-icons">home</button>
+  </nav>
+  <h1 class="pet-name">Loki</h1>
+  <div class="location-info">
+    <span class="material-icons location-icon">phone</span>
+    <p class="location-text">Ahemadabad Gujarat</p>
+    <button class="material-icons chat-button">chat</button>
+  </div>
+</header>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons&family=Montserrat:wght@400;700&family=Luxurious+Roman&family=Inter&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.main-content {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-top: 22px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  max-width: 396px;
+  align-items: stretch;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-family: "Material Icons";
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.back-button {
+  color: #ff1119;
+}
+
+.home-button {
+  color: #ff8787;
+}
+
+.pet-name {
+  color: #171717;
+  font-size: 36px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.location-info {
+  display: flex;
+  margin-top: 10px;
+  width: 278px;
+  max-width: 100%;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.location-icon {
+  color: #be9191;
+  font-size: 32px;
+}
+
+.location-text {
+  color: #000000;
+  font-size: 20px;
+  font-family: "Luxurious Roman", serif;
+  align-self: start;
+  margin-top: 12px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 192px;
+  margin: 12px 0 0 0;
+}
+
+.chat-button {
+  color: #ff8787;
+  background: none;
+  border: none;
+  font-family: "Material Icons";
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.profile-image {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 48px;
+  margin-top: 4px;
+}
+
+.pet-stats {
+  align-self: stretch;
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 68px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.stat-container {
+  display: flex;
+  align-items: stretch;
+  gap: 40px 98px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.stat-circle {
+  background-color: #41f0b6;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.age-stat {
+  padding: 20px 40px 42px;
+  white-space: nowrap;
+}
+
+.weight-stat {
+  padding: 24px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.weight-value {
+  align-self: start;
+  margin-top: 15px;
+}
+
+.about-section {
+  border-radius: 32px;
+  background-color: rgba(251, 173, 64, 0.3);
+  display: flex;
+  margin-top: 7px;
+  padding: 19px 16px;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: Montserrat, sans-serif;
+  color: #171717;
+}
+
+.about-heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+</style>
+
+<main class="main-content">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc8a4163a646ed2f7ffee827af0e783f74c5e01515532e76d402e0d3e21d213d?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+    alt="Pet profile picture"
+    class="profile-image"
+  />
+
+  <section class="pet-stats">
+    <div class="stat-container">
+      <div class="stat-circle age-stat">Age:-</div>
+      <div class="stat-circle weight-stat">
+        <span>Weight:-</span>
+        <span class="weight-value">2.2 Kg</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2 class="about-heading">About</h2>
+    <p class="about-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt et
+      eros eu tincidunt. Maecenas id scelerisque leo, eu posuere eros. Curabitur
+      convallis massa eu iaculis porttitor. Maecenas sed finibus dolor, et
+      luctus odio. Duis egestas sit amet tortor ac rhoncus.
+    </p>
+  </section>
+</main>

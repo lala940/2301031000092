@@ -1,0 +1,145 @@
+<style>
+.login-container {
+  background-color: rgba(65, 240, 182, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 25px 12px 55px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+  font-family:
+    Narnoor,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  text-align: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.back-button .material-icons {
+  color: rgba(255, 17, 25, 1);
+  font-family:
+    "Material Icons",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-label {
+  line-height: 1;
+  text-align: right;
+  margin-top: 231px;
+}
+
+.input-label:nth-of-type(2) {
+  margin-top: 46px;
+  margin-left: 13px;
+}
+
+.input-field {
+  border-radius: 50px;
+  background-color: rgba(255, 17, 25, 1);
+  width: 258px;
+  height: 58px;
+  margin-top: 21px;
+  border: none;
+  max-width: 100%;
+}
+
+.input-field-bordered {
+  border: 1px solid rgba(0, 0, 0, 1);
+  margin-top: 17px;
+}
+
+.login-button {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 135, 135, 1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  align-self: flex-end;
+  margin-top: 143px;
+  width: 240px;
+  height: 240px;
+  padding: 0;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  color: #f7f7f7;
+  white-space: nowrap;
+  letter-spacing: 1.2px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Accessibility improvements */
+.input-field:focus,
+.back-button:focus,
+.login-button:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Hide default input styling */
+.input-field {
+  color: transparent;
+}
+
+.input-field::placeholder {
+  color: transparent;
+}
+
+</style>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Narnoor&family=Londrina+Solid&family=Material+Icons"
+/>
+<link rel="stylesheet" href="styles.css" />
+
+<main class="login-container">
+  <button class="back-button" aria-label="Go back">
+    <span class="material-icons">arrow_back</span>
+  </button>
+
+  <form class="login-form">
+    <label for="username" class="input-label">User Name:-</label>
+    <input type="text" id="username" class="input-field" required />
+
+    <label for="password" class="input-label">Password:-</label>
+    <input
+      type="password"
+      id="password"
+      class="input-field input-field-bordered"
+      required
+    />
+
+    <button type="submit" class="login-button">login</button>
+  </form>
+</main>

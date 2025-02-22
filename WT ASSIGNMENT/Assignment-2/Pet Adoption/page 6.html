@@ -1,0 +1,291 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons&family=Londrina+Solid&family=Montserrat:wght@700&family=Luxurious+Roman&display=swap");
+
+.pet-listing {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.navigation {
+  display: flex;
+  align-items: stretch;
+  gap: 100px;
+  font-family:
+    "Material Icons",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.nav-icon {
+  margin-top: 10px;
+}
+
+.nav-back {
+  color: #ff1119;
+}
+
+.nav-home {
+  color: #e68d8d;
+}
+
+.filter-tabs {
+  align-self: stretch;
+  display: flex;
+  margin-top: 147px;
+  align-items: center;
+  gap: 16px;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  color: #f7f7f7;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+
+.filter-tab {
+  border-radius: 60px;
+  background-color: #ec5254;
+  border: none;
+  color: inherit;
+  font: inherit;
+  width: 88px;
+  height: 88px;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+}
+
+.filter-tab-large {
+  font-size: 32px;
+  width: 96px;
+  height: 96px;
+}
+
+.pet-grid {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pet-card {
+  display: flex;
+  margin-left: 13px;
+  align-items: stretch;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.pet-image {
+  aspect-ratio: 0.96;
+  object-fit: contain;
+  object-position: center;
+  width: 130px;
+  border-radius: 80px;
+  flex-shrink: 0;
+}
+
+.pet-info {
+  align-self: start;
+  display: flex;
+  margin-top: 14px;
+  align-items: start;
+  gap: 1px;
+}
+
+.pet-details {
+  display: flex;
+  margin-top: 9px;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.pet-name {
+  color: #171717;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: 20px;
+  margin: 0;
+}
+
+.pet-location {
+  color: #000000;
+  font-family:
+    "Luxurious Roman",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 23px;
+  font-size: 20px;
+}
+
+.pet-type {
+  border-radius: 50px;
+  background-color: #e5a538;
+  padding: 1px 17px;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #fff5f5;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+
+.pet-grid-group {
+  display: flex;
+  margin-top: 37px;
+  margin-left: 13px;
+  align-items: stretch;
+  gap: 27px;
+}
+
+.pet-images {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.pet-cards-group {
+  align-self: start;
+  display: flex;
+  margin-top: 8px;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.pet-card-small {
+  margin-bottom: 20px;
+}
+
+.pet-header {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  font-family:
+    Montserrat,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  justify-content: space-between;
+}
+
+.location-bottom {
+  margin-top: 17px;
+}
+
+</style>
+<nav class="navigation">
+  <span class="nav-icon nav-back">arrow_back</span>
+  <span class="nav-icon nav-home">home</span>
+</nav>
+
+<main class="pet-listing">
+  <section class="filter-tabs">
+    <button class="filter-tab filter-tab-large">Dogs</button>
+    <button class="filter-tab">Cats</button>
+    <button class="filter-tab">Birds</button>
+    <button class="filter-tab">Fish</button>
+  </section>
+
+  <section class="pet-grid">
+    <article class="pet-card">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9a31281ccdb9e8ee3a27caaf3979c7e90b08bcbc9c70491fa181f858a9d1096?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        class="pet-image"
+        alt="Pet named Dimba"
+      />
+      <div class="pet-info">
+        <div class="pet-details">
+          <h2 class="pet-name">Dimba</h2>
+          <p class="pet-location">Amritsar Panjab</p>
+        </div>
+        <span class="pet-type">Dog</span>
+      </div>
+    </article>
+
+    <div class="pet-grid-group">
+      <div class="pet-images">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/358f8e933ec591e208a93a86e2b15d4651126f0b626d13b65ea077a26b66317e?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          class="pet-image"
+          alt="Pet named Zoe"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/c06eab79d37da6294cb32279cce55ec36622eef05a787b025e304056f0054a1e?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          class="pet-image"
+          alt="Pet named Seru"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f882013d86f991a149a888d80cb1ede2b87b538572a043c9ecd693266d1a2dd?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+          class="pet-image"
+          alt="Pet named Simba"
+        />
+      </div>
+
+      <div class="pet-cards-group">
+        <article class="pet-card-small">
+          <div class="pet-header">
+            <h2 class="pet-name">Zoe</h2>
+            <span class="pet-type">Dog</span>
+          </div>
+          <p class="pet-location">Luthiyana Panjab</p>
+        </article>
+
+        <article class="pet-card-small">
+          <div class="pet-header">
+            <h2 class="pet-name">Seru</h2>
+            <span class="pet-type">Dog</span>
+          </div>
+          <p class="pet-location">Surat Gujarat</p>
+        </article>
+
+        <article class="pet-card-small">
+          <div class="pet-header">
+            <h2 class="pet-name">Simba</h2>
+            <span class="pet-type">Dog</span>
+          </div>
+          <p class="pet-location">Luthiyana Panjab</p>
+        </article>
+
+        <p class="pet-location location-bottom">Ahemadabad Gujarat</p>
+      </div>
+    </div>
+  </section>
+</main>

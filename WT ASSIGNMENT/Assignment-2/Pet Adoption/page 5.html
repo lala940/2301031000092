@@ -1,0 +1,149 @@
+<style>
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.profile-container {
+  background-color: #ffffff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  max-width: 396px;
+  align-items: stretch;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.nav-icon {
+  font-family: "Material Icons";
+  font-size: 32px;
+  font-weight: 400;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-back {
+  color: #ff1119;
+}
+
+.nav-home {
+  color: #f7f7f7;
+}
+
+.profile-image {
+  aspect-ratio: 0.82;
+  object-fit: contain;
+  object-position: center;
+  width: 94px;
+  border-radius: 1000px;
+}
+
+.profile-name {
+  color: #000000;
+  font-size: 32px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.profile-sections {
+  align-self: stretch;
+  display: flex;
+  margin-top: 123px;
+  width: 100%;
+  padding-left: 19px;
+  padding-right: 19px;
+  flex-direction: column;
+  align-items: start;
+  gap: 31px;
+}
+
+.section-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.section-title {
+  color: #171717;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.section-icon {
+  font-family: "Material Icons";
+  font-size: 24px;
+  color: #171717;
+}
+
+.logout-button {
+  color: #f26d3d;
+  font-family: "Material Icons";
+  font-size: 20px;
+  font-weight: 400;
+  align-self: flex-end;
+  margin-top: 424px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+</style>
+<nav class="navigation">
+  <button class="nav-icon nav-back" aria-label="Go back">arrow_back</button>
+  <button class="nav-icon nav-home" aria-label="Go to home">home</button>
+</nav>
+
+<main class="profile-container">
+  <img
+    loading="lazy"
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a76e7dda02f44a51964883c6d02ad25ad3298116bc45f72754f085d9a7b18ce?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+    class="profile-image"
+    alt="Profile picture of Rave Stria"
+  />
+
+  <h1 class="profile-name">Rave Stria</h1>
+
+  <section class="profile-sections">
+    <button class="section-button">
+      <span class="section-title">Personal Information</span>
+      <span class="section-icon">expand_more</span>
+    </button>
+
+    <button class="section-button">
+      <span class="section-title">Guardian's Profile</span>
+      <span class="section-icon">expand_more</span>
+    </button>
+
+    <button class="section-button">
+      <span class="section-title">Your Pets For Adoption</span>
+      <span class="section-icon">expand_more</span>
+    </button>
+  </section>
+
+  <button class="logout-button" aria-label="Logout">logout</button>
+</main>

@@ -1,0 +1,227 @@
+<style>
+@font-face {
+  font-family: "Londrina Solid";
+  src: url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
+}
+
+.pet-discovery {
+  background-color: #ffffff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 34px 0 170px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.header-container {
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 352px;
+  align-items: stretch;
+  gap: 20px;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #000;
+  font-weight: 400;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  margin: auto 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.title {
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  align-self: start;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.header-image {
+  aspect-ratio: 0.82;
+  object-fit: contain;
+  object-position: center;
+  width: 94px;
+  border-radius: 1000px;
+  flex-shrink: 0;
+}
+
+.content-section {
+  display: flex;
+  margin-top: 49px;
+  width: 100%;
+  padding: 0 5px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.pet-categories {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  color: #f7f7f7;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+
+.category-btn {
+  border: none;
+  border-radius: 60px;
+  background-color: #ec5254;
+  color: #f7f7f7;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.category-dogs {
+  padding: 0 20px;
+  font-size: 32px;
+  line-height: 1;
+  width: 96px;
+  height: 96px;
+}
+
+.category-cats,
+.category-birds,
+.category-fish {
+  margin: auto 0;
+  width: 88px;
+  height: 88px;
+  letter-spacing: 0.96px;
+}
+
+.category-cats {
+  padding: 0 22px;
+}
+
+.category-birds {
+  padding: 0 19px;
+}
+
+.category-fish {
+  padding: 0 24px;
+}
+
+.pet-grid-top {
+  display: flex;
+  margin: 31px 0 0 12px;
+  align-items: stretch;
+  gap: 23px;
+}
+
+.pet-grid-bottom {
+  display: flex;
+  margin: 14px 0 0 12px;
+  align-items: stretch;
+  gap: 7px;
+}
+
+.pet-grid-top img:first-child {
+  aspect-ratio: 0.79;
+  width: 178px;
+}
+
+.pet-grid-top img:last-child {
+  aspect-ratio: 0.73;
+  width: 164px;
+}
+
+.pet-grid-bottom img:first-child {
+  aspect-ratio: 0.87;
+  width: 194px;
+}
+
+.pet-grid-bottom img:last-child {
+  aspect-ratio: 0.73;
+  width: 163px;
+}
+
+.pet-image {
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+</style>
+<header class="pet-discovery">
+  <div class="header-container">
+    <div class="header-content">
+      <h1 class="title">Discover</h1>
+      <p class="subtitle">Your new best friend</p>
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/739e48b2e1c1aaabbac79d9be1a75e4e382eeec7a58a320f0718e6d096a3c383?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+      class="header-image"
+      alt="Pet discovery illustration"
+    />
+  </div>
+  <main class="content-section">
+    <nav class="pet-categories">
+      <button class="category-btn category-dogs">Dogs</button>
+      <button class="category-btn category-cats">Cats</button>
+      <button class="category-btn category-birds">Birds</button>
+      <button class="category-btn category-fish">Fish</button>
+    </nav>
+    <section class="pet-grid-top">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/55e5a0b3fe730edb12b768a782a84c9bf2a75eec4abe15899dc67a6839ba19b0?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        class="pet-image"
+        alt="Pet photo 1"
+      />
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/111e941ecb3d328edcb430d9552d12a053cf5a14e9dbca36fdb10a4a5af3361a?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        class="pet-image"
+        alt="Pet photo 2"
+      />
+    </section>
+    <section class="pet-grid-bottom">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ed122892f6e8f6c332e086f513b12de33a1dbe656320f67dcc8a1da02b99799?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        class="pet-image"
+        alt="Pet photo 3"
+      />
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/dae8a3eb4872e90310741edae0048e84c2380194802ad06df2860de277af218e?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+        class="pet-image"
+        alt="Pet photo 4"
+      />
+    </section>
+  </main>
+</header>

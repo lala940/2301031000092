@@ -1,0 +1,192 @@
+<header class="nav-header">
+  <nav class="nav-controls">
+    <span class="material-icons back-icon">arrow_back</span>
+    <span class="material-icons home-icon">home</span>
+  </nav>
+</header>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons&family=Montserrat:wght@400;700&family=Luxurious+Roman&family=Inter&display=swap");
+
+.profile-container {
+  background-color: #ffffff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-top: 24px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.nav-header {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.nav-controls {
+  display: flex;
+  width: 100%;
+  max-width: 395px;
+  align-items: stretch;
+  gap: 20px;
+  font-family: "Material Icons";
+  font-size: 32px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.back-icon {
+  color: #ff1119;
+}
+
+.home-icon {
+  color: #be9191;
+}
+
+.pet-name {
+  color: #171717;
+  font-size: 36px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 9px;
+}
+
+.location-bar {
+  display: flex;
+  margin-top: 10px;
+  width: 258px;
+  max-width: 100%;
+  align-items: stretch;
+  gap: 14px;
+  font-family: "Material Icons";
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.phone-icon {
+  color: #be9191;
+}
+
+.location-text {
+  color: #000000;
+  font-size: 24px;
+  font-family: "Luxurious Roman", serif;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 173px;
+}
+
+.chat-icon {
+  color: #e68d8d;
+}
+
+.profile-image {
+  aspect-ratio: 0.92;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 48px;
+  align-self: stretch;
+  margin-top: 7px;
+}
+
+.stats-container {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 68px;
+  gap: 98px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.stat-circle {
+  background-color: #41f0b6;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.age-stat {
+  padding: 18px 40px 44px;
+  white-space: nowrap;
+}
+
+.weight-stat {
+  padding: 23px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weight-value {
+  margin-top: 17px;
+}
+
+.about-section {
+  border-radius: 32px;
+  background-color: rgba(251, 173, 64, 0.3);
+  margin-top: 8px;
+  padding: 19px 16px;
+  width: calc(100% - 78px);
+  font-family: Montserrat, sans-serif;
+  color: #171717;
+}
+
+.about-heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 14px;
+}
+
+</style>
+
+<main class="profile-container">
+  <h1 class="pet-name">Dimba</h1>
+
+  <section class="location-bar">
+    <span class="material-icons phone-icon">phone</span>
+    <h2 class="location-text">Amritsar Panjab</h2>
+    <span class="material-icons chat-icon">chat</span>
+  </section>
+
+  <img
+    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d7c40a92b5e46388e96c4755e7b96cbf48437efcbb9b793aca7119263539bf3?placeholderIfAbsent=true&apiKey=fc2d014e541842899ffadf84179cf82a"
+    alt="Pet profile picture"
+    class="profile-image"
+  />
+
+  <section class="stats-container">
+    <div class="stat-circle age-stat">Age:-</div>
+    <div class="stat-circle weight-stat">
+      <span>Weight:-</span>
+      <span class="weight-value">14.2 Kg</span>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h3 class="about-heading">About</h3>
+    <p class="about-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt et
+      eros eu tincidunt. Maecenas id scelerisque leo, eu posuere eros. Curabitur
+      convallis massa eu iaculis porttitor. Maecenas sed finibus dolor, et
+      luctus odio. Duis egestas sit amet tortor ac rhoncus.
+    </p>
+  </section>
+</main>

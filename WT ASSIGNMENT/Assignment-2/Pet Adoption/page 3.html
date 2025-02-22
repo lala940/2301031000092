@@ -1,0 +1,144 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Narnoor&family=Londrina+Solid&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.signup-form {
+  background-color: rgba(65, 240, 182, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 22px 0 88px 13px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+  font-family:
+    Narnoor,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  text-align: right;
+}
+
+.back-button {
+  color: rgba(255, 17, 25, 1);
+  font-family:
+    "Material Icons",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.form-label {
+  line-height: 1;
+}
+
+.username-label {
+  margin-top: 83px;
+}
+
+.email-label {
+  margin-top: 32px;
+}
+
+.phone-label {
+  margin-top: 28px;
+}
+
+.password-label {
+  margin-top: 36px;
+  margin-left: 11px;
+}
+
+.form-input {
+  border-radius: 50px;
+  background-color: rgba(255, 17, 25, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 258px;
+  height: 58px;
+  max-width: 100%;
+  margin-top: 17px;
+}
+
+.email-input {
+  margin-top: 18px;
+}
+
+.phone-input {
+  margin-top: 20px;
+}
+
+.password-input {
+  margin-top: 14px;
+}
+
+.signup-button {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: rgba(190, 145, 145, 1);
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  align-self: flex-end;
+  margin-top: 24px;
+  width: 240px;
+  padding: 129px 70px 64px;
+  font-family:
+    "Londrina Solid",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  color: #f7f7f7;
+  text-align: center;
+  letter-spacing: 1.2px;
+  aspect-ratio: 1;
+  border: none;
+  cursor: pointer;
+}
+
+/* Reset default input styles */
+input {
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+</style>
+
+<form class="signup-form">
+  <button type="button" class="back-button material-icons">arrow_back</button>
+
+  <label class="form-label username-label">User Name:-</label>
+  <input type="text" class="form-input username-input" aria-label="Username" />
+
+  <label class="form-label email-label">E-mail:-</label>
+  <input type="email" class="form-input email-input" aria-label="Email" />
+
+  <label class="form-label phone-label">Phone No:-</label>
+  <input type="tel" class="form-input phone-input" aria-label="Phone number" />
+
+  <label class="form-label password-label">Password:-</label>
+  <input
+    type="password"
+    class="form-input password-input"
+    aria-label="Password"
+  />
+
+  <button type="submit" class="signup-button">sign up</button>
+</form>
